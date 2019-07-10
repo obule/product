@@ -9,6 +9,7 @@
     "clean": "rimraf dist",
     "dev:build": "yarn run clean && webpack -w",
     "start": "cross-env NODE_ENV=production node dist/index.bundle.js",
+    "dev": "cross-env NODE_ENV=development nodemon dist/index.bundle.js",
     "heroku-postbuild": "webpack -p",
     "prettier": "prettier --single-quote --print-width 80 --trailing-comma all --write 'src/**/*.js'"
   },
