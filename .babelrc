@@ -1,20 +1,35 @@
+// {
+//   "presets": [
+//     ["es2015", { "modules": false }],
+//     [
+//       "env",
+//       {
+//         "targets": {
+//           "node": "current"
+//         }
+//       }
+//     ]
+//   ],
+//   "plugins": [
+//     [
+//       "transform-object-rest-spread",
+//       {
+//         "useBuiltIns": true
+//       }
+//     ]
+//   ]
+// }
+
 {
-  "presets": [
-    ["es2015", { "modules": false }],
-    [
-      "env",
-      {
-        "targets": {
-          "node": "current"
-        }
-      }
-    ]
-  ],
+  "presets": ["es2015", "stage-0"],
   "plugins": [
     [
-      "transform-object-rest-spread",
+      "transform-runtime",
       {
-        "useBuiltIns": true
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
       }
     ]
   ]
