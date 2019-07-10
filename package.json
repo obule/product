@@ -7,11 +7,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "start": "node ./src/index.js",
+    "start": "node ./dist/index.bundle.js",
     "dev:build": "yarn run clean && webpack -w",
     "dev": "cross-env NODE_ENV=development nodemon dist/index.bundle.js",
-    "prettier": "prettier --single-quote --print-width 80 --trailing-comma all --write 'src/**/*.js'",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+    "prettier": "prettier --single-quote --print-width 80 --trailing-comma all --write 'src/**/*.js'"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
