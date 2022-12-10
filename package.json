@@ -18,7 +18,7 @@
     "compression": "^1.6.2",
     "cross-env": "^5.0.0",
     "cors": "^2.8.5",
-    "express": "^4.15.3",
+    "express": "^4.17.3",
     "express-validation": "^1.0.2",
     "helmet": "^3.6.0",
     "http-status": "^1.0.1",
